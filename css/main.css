@@ -103,7 +103,13 @@ body {
    background-color: #010101;
    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
    z-index: 1000;
-   padding: 30px 0;
+   padding: 30px 250px;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
    transition: bottom 0.8s ease;
 }
 
@@ -112,50 +118,49 @@ body {
    bottom: 0;
 }
 
-.inquiry-container {
-   max-width: 1000px;
-   margin: 0 auto;
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: space-between;
-   gap: 20px;
-}
-
 .inquiry-logo img {
    height: 74px;
+}
+
+.inquiry-content {
+   display: flex;
+   flex: 1;
+   align-items: center;
+   gap: 20px;
 }
 
 .inquiry-form {
    flex: 1;
    display: flex;
-   flex-wrap: wrap;
-   gap: 8px;
-   align-items: center;
+   flex-direction: column;
+   gap: 10px;
 }
 
-.inquiry-form .input-row {
+.input-row {
    display: flex;
-   flex-wrap: wrap;
-   gap: 8px;
-   flex: 1 1 100%;
+   gap: 30px;
+   width: 100%;
 }
 
-.inquiry-form input,
-.inquiry-form textarea {
-   padding: 10px;
-   border: 1px solid #ccc;
-   border-radius: 6px;
-   font-size: 14px;
-   background: #fff;
-   flex: 1;
-   min-width: 120px;
+.input-row input {
+   background: transparent;
+   border: none;
+   border-bottom: 1px solid #fff;
+   padding: 8px 4px;
+   color: #fff;
+   font-size: 1.4rem;
+   width: 100%;
 }
 
 .inquiry-form textarea {
-   flex: 1 1 100%;
-   min-height: 50px;
-   resize: vertical;
+   background: transparent;
+   border: none;
+   border-bottom: 1px solid #fff;
+   padding: 8px 4px;
+   color: #fff;
+   font-size: 1.4rem;
+   resize: none;
+   height: 40px;
    font-family: 'Pretendard';
 }
 
@@ -163,8 +168,10 @@ body {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
+   justify-content: center;
    gap: 10px;
    min-width: 200px;
+   margin-left: 20px;
 }
 
 .inquiry-btn button {
@@ -187,6 +194,14 @@ body {
    font-size: 1.3rem;
    color: #fff;
 }
+
+/* input, textarea placeholder 색상도 보이게 */
+.inquiry-form input::placeholder,
+.inquiry-form textarea::placeholder {
+   color: #aaa;
+}
+
+
 
 
 #intro {
