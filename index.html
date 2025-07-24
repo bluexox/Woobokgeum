@@ -51,10 +51,10 @@
                 </h1>
                 <nav class="gnb">
                     <ul>
-                        <li><a href="#">브랜드 소개 </a></li>
-                        <li><a href="#">메뉴 소개</a></li>
-                        <li><a href="#">인테리어</a></li>
-                        <li><a href="#">지점 안내</a></li>
+                        <li><a href="#intro">브랜드 소개 </a></li>
+                        <li><a href="#menu">메뉴 소개</a></li>
+                        <li><a href="#interior">인테리어</a></li>
+                        <li><a href="#reservation">지점 안내</a></li>
                     </ul>
                 </nav>
             </div>
@@ -71,7 +71,8 @@
                 <div class="inquiry-logo">
                     <img src="img/form-logo.png" alt="우복금 로고">
                 </div>
-                <form class="inquiry-form" action="https://formsubmit.co/colorbrain2024@naver.com" method="POST">
+                <form form id="inquiryForm" class="inquiry-form" action="https://formsubmit.co/colorbrain2024@naver.com"
+                    method="POST">
                     <!-- 스팸 방지용 숨김 필드 -->
                     <input type="hidden" name="_honey" style="display:none">
                     <!-- 자동 응답, 전송 후 이동방지 -->
@@ -79,13 +80,12 @@
                     <input type="hidden" name="_subject" value="우복금 빠른 문의가 도착했습니다.">
                     <input type="hidden" name="_template" value="box">
 
-
                     <div class="input-row">
-                        <input type="text" placeholder="이름">
-                        <input type="text" placeholder="연락처">
-                        <input type="text" placeholder="희망지역">
+                        <input type="text" name="name" placeholder="이름">
+                        <input type="text" name="phone" placeholder="연락처">
+                        <input type="text" name="area" placeholder="희망지역">
                     </div>
-                    <textarea placeholder="문의내용을 입력해주세요"></textarea>
+                    <textarea name="message" placeholder="문의내용을 입력해주세요"></textarea>
                 </form>
                 <div class="inquiry-right">
                     <div class="inquiry-btn">
@@ -98,6 +98,16 @@
                 </div>
             </div>
         </section>
+        <script>
+            window.addEventListener('load', function () {
+                setTimeout(function () {
+                    const inquirySection = document.querySelector('.inquiry');
+                    if (inquirySection) {
+                        inquirySection.classList.add('show');
+                    }
+                }, 1000); // 5초 후 show 클래스 추가
+            });
+        </script>
 
         <section id="intro">
             <div class="intro-text">
