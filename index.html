@@ -69,17 +69,17 @@
         </main>
 
         <section class="inquiry">
-            <div class="inquiry-container">
-                <div class="inquiry-logo">
-                    <img src="img/form-logo.png" alt="우복금 로고">
-                </div>
-                <form form id="inquiryForm" class="inquiry-form" action="https://formsubmit.co/colorbrain2024@naver.com"
+            <div class="inquiry-logo">
+                <img src="img/form-logo.png" alt="우복금 로고">
+            </div>
+
+            <div class="inquiry-content">
+                <form id="inquiryForm" class="inquiry-form" action="https://formsubmit.co/colorbrain2024@naver.com"
                     method="POST">
-                    <!-- 스팸 방지용 숨김 필드 -->
+                    <!-- Hidden Fields -->
                     <input type="hidden" name="_honey" style="display:none">
-                    <!-- 자동 응답, 전송 후 이동방지 -->
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_subject" value="우복금 빠른 문의가 도착했습니다.">
+                    <input type="hidden" name="_subject" value="우복금생갈비 창업 문의가 도착했습니다.">
                     <input type="hidden" name="_template" value="box">
 
                     <div class="input-row">
@@ -89,9 +89,10 @@
                     </div>
                     <textarea name="message" placeholder="문의내용을 입력해주세요"></textarea>
                 </form>
+
                 <div class="inquiry-right">
                     <div class="inquiry-btn">
-                        <button type="submit">빠른 문의</button>
+                        <button type="submit" form="inquiryForm">빠른 문의</button>
                     </div>
                     <div class="checkboxes">
                         <label><input type="checkbox" checked> 개인정보처리방침에 동의합니다.</label>
@@ -100,6 +101,7 @@
                 </div>
             </div>
         </section>
+
         <script>
             window.addEventListener('load', function () {
                 setTimeout(function () {
