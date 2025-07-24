@@ -61,9 +61,11 @@
         </header>
 
         <main id="main">
-            <h2>고기에 대한 진심,<br>
-                ‘우복금’이라는 이름에 담았습니다.
-            </h2>
+            <div class="main-text" data-aos="fade-up" data-aos-duration="1200">
+                <h2>고기에 대한 진심,<br>
+                    ‘우복금’이라는 이름에 담았습니다.
+                </h2>
+            </div>
         </main>
 
         <section class="inquiry">
@@ -105,35 +107,39 @@
                     if (inquirySection) {
                         inquirySection.classList.add('show');
                     }
-                }, 1000); // 5초 후 show 클래스 추가
+                }, 800); // 5초 후 show 클래스 추가
             });
         </script>
 
         <section id="intro">
-            <div class="intro-text">
-                <span>Woobokgeum</span>
-                <h2>어머니의 이름으로 약속하는 한 끼</h2>
-                <p>타협하지 않는 원칙과 정직한 손길로 완성한 한 상.<br>
-                    이름이 곧 신뢰가 되는 식탁을 준비합니다.
-                </p>
+            <div class="intro-wrapper">
+                <div class="intro-text" data-aos="fade-right" data-aos-duration="1200">
+                    <span>Woobokgeum</span>
+                    <h2>어머니의 이름으로 약속하는 한 끼</h2>
+                    <p>
+                        타협하지 않는 원칙과 정직한 손길로 완성한 한 상.<br>
+                        이름이 곧 신뢰가 되는 식탁을 준비합니다.
+                    </p>
+                </div>
             </div>
         </section>
 
+
         <section id="story">
             <img class="story-bgimg" src="img/bg-story-text.png" alt="">
-            <div class="story-title">
+            <div class="story-title" data-aos="fade-down" data-aos-duration="1200">
                 <span>Culinary Journey</span>
                 <h2>우복금만의 진정성 있는 맛의 여정</h2>
             </div>
             <ul class="story-list">
-                <li>
+                <li data-aos="fade-down" data-aos-duration="1200">
                     <img src="img/story01.png" alt="">
                     <div class="story-text">
                         <h3>고집스러운 원육 선별</h3>
                         <p>우복금은 마블링과 육질을 꼼꼼히 확인해 최상의 고기만을 선별합니다. 맛있는 고기를 알아보는 것이 우리의 자부심입니다.</p>
                     </div>
                 </li>
-                <li>
+                <li data-aos="fade-down" data-aos-duration="1200">
                     <div class="story-text">
                         <h3>고급 참숯,<br>
                             맛의 차이를 만드는 비밀</h3>
@@ -142,7 +148,7 @@
                     </div>
                     <img src="img/story02.png" alt="">
                 </li>
-                <li>
+                <li data-aos="fade-down" data-aos-duration="1200">
                     <img src="img/story03.png" alt="">
                     <div class="story-text">
                         <h3>고기는 저희가,<br>
@@ -153,11 +159,15 @@
                 </li>
             </ul>
             <div class="story-hook">
-                <p>어머니의 이름에서 시작된 우리의 이야기가<br>
-                    이제 고객님들의 웃음과 행복으로 채워지고 있습니다.<br>
-                    이곳에서 특별한 순간을 함께 만들어가길 기대합니다.
-                </p>
+                <div class="story-hook-box">
+                    <p data-aos="flip-right" data-aos-duration="1200">
+                        어머니의 이름에서 시작된 우리의 이야기가<br>
+                        이제 고객님들의 웃음과 행복으로 채워지고 있습니다.<br>
+                        이곳에서 특별한 순간을 함께 만들어가길 기대합니다.
+                    </p>
+                </div>
             </div>
+
         </section>
 
         <section id="menu">
@@ -202,14 +212,14 @@
         </section>
 
         <section id="interior">
-            <div class="interior-title">
+            <div class="interior-title" data-aos="fade-right" data-aos-duration="1200">
                 <span>Interior</span>
                 <h3>추억을 머금은 우복금만의 레트로 감성</h3>
                 <p>우복금생갈비는 현대적으로 재해석한 레트로 감성 인테리어로<br>
                     오랜 시간을 품은 듯한 편안함 속에서 ‘머무르고 싶은 식당’을 지향합니다.
                 </p>
             </div>
-            <div class="interior-swiper-container">
+            <div class="interior-swiper-container" data-aos="fade-left" data-aos-duration="1200">
                 <div class="swiper interior-swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="img/interior01.png" alt="인테리어1"></div>
@@ -225,12 +235,12 @@
         </section>
 
         <section id="reservation">
-            <div class="res-title">
+            <div class="res-title" data-aos="fade-right" data-aos-duration="1200">
                 <span>reservation</span>
                 <h3>지점 안내 및 예약</h3>
                 <p>가까운 우복금 지점을 찾아 편리하게 예약하세요.</p>
             </div>
-            <div class="res-swiper-container">
+            <div class="res-swiper-container" data-aos="fade-left" data-aos-duration="1200">
                 <div class="swiper res-swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -239,7 +249,7 @@
                                 <h4>대구 본점</h4>
                                 <p>📍 대구 달서구 와룡로31길 12 B동</p>
                                 <p>☎️ 0507-1377-3978</p>
-                                <a href="#" class="naver-btn" target="_blank">네이버로 보기</a>
+                                <a href="https://naver.me/5OQy1y6J" class="naver-btn" target="_blank">네이버로 보기</a>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -248,7 +258,7 @@
                                 <h4>종로점</h4>
                                 <p>📍 대구 중구 종로 38-1 1~2층</p>
                                 <p>☎️ 0507-1421-5624</p>
-                                <a href="#" class="naver-btn" target="_blank">네이버로 보기</a>
+                                <a href="https://naver.me/FHl0nlKX" class="naver-btn" target="_blank">네이버로 보기</a>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -257,7 +267,7 @@
                                 <h4>대곡점</h4>
                                 <p>📍 대구 달서구 갈밭로 28 1~3층</p>
                                 <p>☎️ 010-5100-9580</p>
-                                <a href="#" class="naver-btn" target="_blank">네이버로 보기</a>
+                                <a href="https://naver.me/FxFO31FO" class="naver-btn" target="_blank">네이버로 보기</a>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -266,7 +276,7 @@
                                 <h4>교동점</h4>
                                 <p>📍 대구 중구 경상감영길 232 1층</p>
                                 <p>☎️ 010-5757-5621</p>
-                                <a href="#" class="naver-btn" target="_blank">네이버로 보기</a>
+                                <a href="https://naver.me/5vc6RUiJ" class="naver-btn" target="_blank">네이버로 보기</a>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -275,7 +285,7 @@
                                 <h4>대봉점</h4>
                                 <p>📍 대구 중구 대봉로 196 1층</p>
                                 <p>☎️ 0507-1440-1571</p>
-                                <a href="#" class="naver-btn" target="_blank">네이버로 보기</a>
+                                <a href="https://naver.me/57V6TR5I" class="naver-btn" target="_blank">네이버로 보기</a>
                             </div>
                         </div>
                     </div>
@@ -299,6 +309,12 @@
                 </div>
             </div>
         </footer>
+
+        <button id="toTopBtn" title="맨 위로">
+            <img src="img/gotop-btn.png" alt="맨 위로 버튼" />
+        </button>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     </div>
 
 </body>
