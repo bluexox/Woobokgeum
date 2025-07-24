@@ -2,9 +2,8 @@ $(document).ready(function () {
 
     document.addEventListener("DOMContentLoaded", function () {
         const form = document.getElementById("inquiryForm");
-        const submitBtn = document.querySelector(".inquiry-btn button");
 
-        submitBtn.addEventListener("click", function (e) {
+        form.addEventListener("submit", function (e) {
             const name = form.querySelector("input[name='name']").value.trim();
             const phone = form.querySelector("input[name='phone']").value.trim();
             const area = form.querySelector("input[name='area']").value.trim();
@@ -12,7 +11,7 @@ $(document).ready(function () {
 
             if (!name || !phone || !area || !message) {
                 alert("모든 항목을 입력해 주세요.");
-                e.preventDefault(); // 폼 전송 방지
+                e.preventDefault(); // 유효성 검증 실패 시만 막음
             }
         });
     });
@@ -42,6 +41,15 @@ $(document).ready(function () {
         mirror: false, // whether elements should animate out while scrolling past them
         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
+    });
+
+    const toTopBtn = document.getElementById('toTopBtn');
+
+    toTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'  // 부드럽게 올라감
+        });
     });
 
     const interiorSwiper = new Swiper('.interior-swiper', {
