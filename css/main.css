@@ -48,7 +48,7 @@ body {
 }
 
 .header-inner {
-   max-width: 1400px;
+   max-width: 1360px;
    margin: 0 auto;
    display: flex;
    height: 70px;
@@ -394,7 +394,7 @@ body {
 }
 
 .interior-title {
-   padding-left: 280px;
+   padding-left: calc(100% - 85%);
 }
 
 .interior-title span {
@@ -417,7 +417,7 @@ body {
 }
 
 .interior-swiper-container {
-   padding-left: 280px;
+   padding-left: calc(100% - 85%);
    width: 100%;
 }
 
@@ -469,7 +469,7 @@ body {
 }
 
 .res-title {
-   padding-left: 280px;
+   padding-left: calc(100% - 85%);
 }
 
 .res-title span {
@@ -491,7 +491,7 @@ body {
 }
 
 .res-swiper-container {
-   padding-left: 280px;
+   padding-left: calc(100% - 85%);
    width: 100%;
 }
 
