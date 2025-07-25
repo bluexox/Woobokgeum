@@ -13,6 +13,9 @@
 
 html {
    scroll-behavior: smooth;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -29,6 +32,14 @@ body {
    color: #111111;
    overflow-x: hidden;
    -ms-overflow-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
 }
 
 #wrap {
@@ -133,7 +144,7 @@ body {
 .inquiry {
    position: fixed;
    bottom: -100%;
-   /* width: 100%; */
+   width: 100%;
    background-color: #010101;
    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
    z-index: 1000;
@@ -165,6 +176,15 @@ body {
    align-items: center;
    gap: 20px;
    flex-wrap: wrap;
+   max-width: 100%;
+}
+
+.inquiry form,
+.inquiry-container,
+.inquiry-logo img,
+input,
+textarea,
+button {
    max-width: 100%;
 }
 
