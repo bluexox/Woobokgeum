@@ -1,48 +1,5 @@
 $(document).ready(function () {
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const form = document.getElementById("inquiryForm");
-
-        form.addEventListener("submit", function (e) {
-            e.preventDefault(); // 기본 전송 막기
-
-            const name = form.querySelector("input[name='name']").value.trim();
-            const phone = form.querySelector("input[name='phone']").value.trim();
-            const area = form.querySelector("input[name='area']").value.trim();
-            const message = form.querySelector("textarea[name='message']").value.trim();
-
-            if (!name || !phone || !area || !message) {
-                alert("모든 항목을 입력해 주세요.");
-                return;
-            }
-
-            const formData = new FormData(form);
-
-            fetch(form.action, {
-                method: "POST",
-                body: formData,
-                headers: {
-                    'Accept': 'application/json' // formsubmit이 JSON 응답을 반환하도록 요청
-                }
-            })
-                .then(response => {
-                    if (response.ok) {
-                        alert("문의 신청이 완료되었습니다.");
-                        form.reset(); // 입력값 초기화
-                    } else {
-                        alert("전송 중 오류가 발생했습니다. 다시 시도해 주세요.");
-                    }
-                })
-                .catch(error => {
-                    alert("네트워크 오류가 발생했습니다.");
-                    console.error(error);
-                });
-        });
-    });
-
-
-    AOS.init();
-
     // You can also pass an optional settings object
     // below listed default settings
     AOS.init({
