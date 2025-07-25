@@ -245,6 +245,12 @@ body {
    color: #aaa;
 }
 
+@media (max-width: 1400px) {
+   .inquiry {
+   padding: 30px 200px;
+   }
+}
+
 @media (max-width: 1200px) {
    .inquiry {
    padding: 30px 80px;
@@ -651,7 +657,7 @@ body {
 }
 
 .interior-swiper-container {
-   margin-left: calc(100% - 85%);
+   padding-left: calc(100% - 85%);
    width: 100%;
 }
 
@@ -743,7 +749,7 @@ body {
 }
 
 .res-swiper-container {
-   margin-left: calc(100% - 85%);
+   padding-left: calc(100% - 85%);
    width: 100%;
 }
 
