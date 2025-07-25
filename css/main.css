@@ -657,8 +657,12 @@ body {
 }
 
 .interior-swiper-container {
-   padding-left: calc(100% - 85%);
+   display: flex;
+   justify-content: flex-end;
    width: 100%;
+   box-sizing: border-box;
+   padding-left: 15%;
+   overflow-x: hidden;
 }
 
 .interior-swiper {
@@ -749,8 +753,12 @@ body {
 }
 
 .res-swiper-container {
-   padding-left: calc(100% - 85%);
+   display: flex;
+   justify-content: flex-end;
    width: 100%;
+   box-sizing: border-box;
+   padding-left: 15%;
+   overflow-x: hidden;
 }
 
 .res-swiper {
