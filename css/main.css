@@ -152,11 +152,6 @@ body {
    /* 추가 */
 }
 
-.inquiry * {
-   box-sizing: border-box;
-   /* 모든 자식에 강제 적용 */
-}
-
 /* 보여지는 상태 */
 .inquiry.show {
    bottom: 0;
