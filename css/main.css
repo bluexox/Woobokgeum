@@ -906,7 +906,12 @@ body {
    height: auto;
 }
 
-/* 모바일 (최대 767px) */
+@media (max-width: 1399px) {
+   #toTopBtn {
+      display: none;
+   }
+}
+
 @media (max-width: 767px) {
    .header-inner {
       flex-direction: column;
