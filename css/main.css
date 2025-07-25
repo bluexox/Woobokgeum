@@ -619,10 +619,8 @@ body {
 }
 
 .interior-title {
-   padding-left: 15%;
-   box-sizing: border-box;
-   width: 100%;
-   overflow-x: hidden;
+  width: 85%;
+  margin-left: auto;
 }
 
 .interior-title span {
