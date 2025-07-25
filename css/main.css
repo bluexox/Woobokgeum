@@ -619,7 +619,10 @@ body {
 }
 
 .interior-title {
-   padding-left: calc(100% - 85%);
+   padding-left: 15%;
+   box-sizing: border-box;
+   width: 100%;
+   overflow-x: hidden;
 }
 
 .interior-title span {
@@ -727,7 +730,10 @@ body {
 }
 
 .res-title {
-   padding-left: calc(100% - 85%);
+   padding-left: 15%;
+   box-sizing: border-box;
+   width: 100%;
+   overflow-x: hidden;
 }
 
 .res-title span {
