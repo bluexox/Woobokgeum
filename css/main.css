@@ -856,6 +856,10 @@ body {
 }
 
 @media (max-width: 767px) {
+   .footer {
+      padding: 60px 0 300px;
+   }
+
    .footer-text p {
       font-size: 1.4rem;
    }
