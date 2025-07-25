@@ -423,6 +423,20 @@ body {
    font-weight: 300;
 }
 
+@media (max-width: 1200px) {
+   .story-list img {
+      width: 315px;
+   }
+
+   .story-text h3 {
+      font-size: 2.4rem;
+   }
+
+   .story-text h3+p {
+      font-size: 1.6rem;
+   }
+}
+
 @media (max-width: 767px) {
    #story {
       padding: 120px 0 0;
