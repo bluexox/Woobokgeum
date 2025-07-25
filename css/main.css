@@ -261,6 +261,14 @@ body {
       gap: 16px;
    }
 
+   .inquiry-form input,
+   .inquiry-form textarea {
+      -webkit-appearance: none;
+      appearance: none;
+      border-radius: 0;
+      outline: none;
+   }
+
    .input-row {
       gap: 10px;
       width: 100%;
