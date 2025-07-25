@@ -4,6 +4,8 @@ $(document).ready(function () {
         const form = document.getElementById("inquiryForm");
 
         form.addEventListener("submit", function (e) {
+            e.preventDefault(); // 폼 전송 중단
+
             const name = form.querySelector("input[name='name']").value.trim();
             const phone = form.querySelector("input[name='phone']").value.trim();
             const area = form.querySelector("input[name='area']").value.trim();
@@ -11,8 +13,27 @@ $(document).ready(function () {
 
             if (!name || !phone || !area || !message) {
                 alert("모든 항목을 입력해 주세요.");
-                e.preventDefault(); // 유효성 검증 실패 시만 막음
+                return;
             }
+
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: "POST",
+                body: formData
+            })
+                .then(response => {
+                    if (response.ok) {
+                        alert("문의 신청이 완료되었습니다.");
+                        form.reset(); // 입력값 초기화
+                    } else {
+                        alert("전송 중 오류가 발생했습니다. 다시 시도해 주세요.");
+                    }
+                })
+                .catch(error => {
+                    alert("네트워크 오류가 발생했습니다.");
+                    console.error(error);
+                });
         });
     });
 
